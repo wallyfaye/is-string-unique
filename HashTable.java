@@ -3,8 +3,9 @@ class HashTable {
 	public HashTable() {
 	}
 
-	public void addData(char key) {
+	public boolean addData(char key) {
 		System.out.println(key);
+		return false;
 	}
 
 }
