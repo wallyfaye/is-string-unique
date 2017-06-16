@@ -4,15 +4,16 @@ class StringUnique{
 	public Boolean res = true;
 
 	public StringUnique(String str){
-		
 		req = str;
 		HashTable str_hash = new HashTable();
-		for(int i = 0; i < str.length(); i++){
+		int i = 0;
+		while(res && i < str.length()){
 			if(!str_hash.addData(str.charAt(i))){
 				res = false;
 			}
+			i++;
 		}
-		System.out.println(str);
+		
 	}
 
 }
